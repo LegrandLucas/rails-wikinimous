@@ -1,0 +1,7 @@
+<h1>HELLO WOLRD</h1>
+
+<% @articles.each do |article| %>
+  <h2><%= article.title %></h2>
+  <p><%= article.content %></p>
+  <li><%= link_to 'view article', article_path(article) %>
+<% end %>
